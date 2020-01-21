@@ -1,10 +1,9 @@
 # Projeto de preparação para o teste
 
-Este modelo baseia-se numa aplicação para gerir notas realizada em aula.
+Este modelo de teste baseia-se numa aplicação para gerir notas realizada em aula.
 Tente fazer o máximo que conseguir sem consultar o projeto original.
 
 O projeto já inclui todas as dependências e drawables necessários.
-Não tem de fazer traduções mas quaisquer Strings fixas nos layouts devem ser definidas como um recurso no ficheiro strings.xml
 
 Descarregue este projeto e tente correr no seu dispositivo Android (preferível a um emulador). Se necessário, descarregue a versão do SDK que o Android Studio lhe indicar.
 
@@ -12,11 +11,18 @@ As dependências e versões deste projeto serão as mesmas para o teste.
 
 Se notar algum problema na execução/compilação do projeto, informe-me atempadamente.
 
+
+1. Não tem de fazer traduções nem é necessário gerar recursos para Strings nos layouts;
+2. Pode consultar e utilizar código de todos os exemplos disponíveis no repositório github da unidade curricular ou na página moodle da unidade curricular.
+3. Não é necessário realizar as operações sobre a BD numa thread de background;
+4. Se tiver dificuldades na utilização da base de dados Room, pode escolher criar uma fonte de dados “dummy” desde que os dados não se percam durante a execução da aplicação. Sofrerá uma penalização mas será sempre menor do que se não existir qualquer fonte de dados. Tem um exemplo de uma fonte de dados deste género no projeto Aula04 no GitHub:
+https://github.com/diogopm-ipbeja/lei-pdm-2019/blob/master/Aula04/app/src/main/java/pt/ipbeja/aula04/data/ContactDataSource.java
+
+
 # UI
 A aplicação tem 3 Activities:
 1. MainActivity - Contém a lista de todas as notas
 2. CreateNoteActivity - Permite criar uma nota
-3. NoteDetailsActivity - Permite ver os detalhes da nota
 
 
 ## MainActivity
@@ -30,17 +36,12 @@ Tem de definir o layout da Activity assim como o layout para os items da lista. 
 ### Mais acerca da lista
 Tem de definir um NotesAdapter (extends RecyclerView.Adapter) e respetivo NoteViewHolder (extends ViewHolder) como classes internas da MainActivity e fazer as respetivas configurações (não esquecer o LinearLayoutManager).
 
-Cada um dos items da lista deve ter um OnClickListener para lançar a NoteDetailsActivity com a informação da Note seleccionada. Pode (deve) atribuir o OnClickListener à View do próprio ViewHolder (recebida no construtor)
-Note que terá de incluir como 'extra' o ID da Note no Intent que lança a NoteDetailsActivity.
+Cada um dos items da lista deve ter um OnClickListener para mostrar um Toast com a descrição da Note seleccionada.
 
 ## CreateNoteActivity
 Activity para criar uma nota. Deve acrescentar os widgets necessários para criar uma Note (ver informação acerca da class Note na secção Dados)
 Deve ter um botão para guardar o registo na base de dados e terminar (Activity#finish()) a Activity, voltando à MainActivity.
 
-## NoteDetailsActivity
-Activity para ver os detalhes de uma nota.
-Note que tem de passar como 'extra' o identificador único da nota. Com este identificador deve obter o registo correspondente na base de dados e utilizá-lo para preencher os widgets.
-Deve acrescentar os widgets necessários (TextViews) para mostrar todos os dados (excepto o identificador único) de uma Note (ver informação acerca da class Note na secção Dados)
 
 # Dados
 

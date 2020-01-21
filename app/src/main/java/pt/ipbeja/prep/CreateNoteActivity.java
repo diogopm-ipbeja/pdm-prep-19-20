@@ -20,7 +20,7 @@ public class CreateNoteActivity extends AppCompatActivity {
         // TODO Acrescente widgets para o user introduzir os dados necessários para criar uma Note
         //  Veja os atributos da class Note (ignore o id)
 
-        // TODO acrescente um Button ou um Menu com um MenuItem para guardar a Note na Base de Dados
+        // TODO acrescente um Button para guardar a Note na Base de Dados
         //  Depois de guardar, deve terminar esta Activity para voltar à MainActivity (finish())
         //  Note que NÃO é necessário realizar a operação numa outra thread.
 

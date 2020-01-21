@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // TODO Acrescente um FloatingActionButton ao layout desta Activity
         //  - Acrescente um OnClickListener ao FloatingActionButton. Ao pressionar o botão, a
         //    aplicação deve lançar a CreateNoteActivity
-        //  - Pode utilizar o drawable "add" (R.drawable.ic_add_black_24dp) já incluido no projeto
+        //  - Pode utilizar o drawable R.drawable.ic_add_black_24dp já incluido no projeto
         //    como ícone do botão.
 
 
