@@ -20,7 +20,7 @@ https://github.com/diogopm-ipbeja/lei-pdm-2019/blob/master/Aula04/app/src/main/j
 
 
 # UI
-A aplicação tem 3 Activities:
+A aplicação tem 2 Activities:
 1. MainActivity - Contém a lista de todas as notas
 2. CreateNoteActivity - Permite criar uma nota
 
