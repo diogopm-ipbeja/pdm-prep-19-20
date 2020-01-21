@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         //  - Defina um NotesAdapter como class interna da MainActivity (ver abaixo) que dará
         //    suporte à RecyclerView e configure a RecylerView para o utilizar (não se esqueça de
         //    atribuir também um LinearLayoutManager à RecyclerView)
-        //  - Ao pressionar um dos items da lista, deve ser lançada a NoteDetailsActivity com a
-        //    informação dos detalhes do item seleccionado. Para isto deve acrescentar um
-        //    OnClickListener à View do próprio ViewHolder.
+        //  - Ao pressionar um dos items da lista, deve ser mostrado um Toast com a descrição da
+        //    nota seleccionada:
+        //    Toast.makeText(MainActivity.this, "Descrição aqui", Toast.LENGTH_SHORT).show();
 
         // TODO Acrescente um FloatingActionButton ao layout desta Activity
         //  - Acrescente um OnClickListener ao FloatingActionButton. Ao pressionar o botão, a
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // TODO Note que cada vez que a Activity volta estar visível, deve mostrar uma lista com os
         //  os dados actualizados. Utilize um dos métodos de callback do ciclo de vida para dar
         //  suporte a esta funcionalidade.
+
     }
 
 
