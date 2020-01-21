@@ -4,6 +4,7 @@ Este modelo baseia-se numa aplicação para gerir notas realizada em aula.
 Tente fazer o máximo que conseguir sem consultar o projeto original.
 
 O projeto já inclui todas as dependências e drawables necessários.
+Não tem de fazer traduções mas quaisquer Strings fixas nos layouts devem ser definidas como um recurso no ficheiro strings.xml
 
 Descarregue este projeto e tente correr no seu dispositivo Android (preferível a um emulador). Se necessário, descarregue a versão do SDK que o Android Studio lhe indicar.
 
