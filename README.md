@@ -5,6 +5,10 @@ Tente fazer o máximo que conseguir sem consultar o projeto original.
 
 O projeto já inclui todas as dependências e drawables necessários.
 
+Descarregue este projeto e tente correr no seu dispositivo Android (preferível a um emulador). Se necessário, descarregue a versão do SDK que o Android Studio lhe indicar.
+
+As dependências e versões deste projeto serão as mesmas para o teste.
+
 # UI
 A aplicação tem 3 Activities:
 1. MainActivity - Contém a lista de todas as notas
