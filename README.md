@@ -9,6 +9,8 @@ Descarregue este projeto e tente correr no seu dispositivo Android (preferível 
 
 As dependências e versões deste projeto serão as mesmas para o teste.
 
+Se notar algum problema na execução/compilação do projeto, informe-me atempadamente.
+
 # UI
 A aplicação tem 3 Activities:
 1. MainActivity - Contém a lista de todas as notas
